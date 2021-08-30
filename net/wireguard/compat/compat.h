@@ -827,12 +827,12 @@ static __always_inline void old_rcu_barrier(void)
 #endif
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(4, 19, 10) && !defined(ISRHEL8)
-static inline void skb_mark_not_on_list(struct sk_buff *skb)
+/*static inline void skb_mark_not_on_list(struct sk_buff *skb)
 {
 	skb->next = NULL;
 }
+*/
 #endif
-
 #if LINUX_VERSION_CODE < KERNEL_VERSION(4, 20, 0) && !defined(ISRHEL8)
 #define NLA_POLICY_EXACT_LEN(_len) { .type = NLA_UNSPEC, .len = _len }
 #endif

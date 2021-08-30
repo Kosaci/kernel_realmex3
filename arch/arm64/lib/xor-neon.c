@@ -11,7 +11,7 @@
 
 #include <linux/raid/xor.h>
 #include <linux/module.h>
-#include <asm/neon-intrinsics.h>
+/*#include <asm/neon-intrinsics.h> */
 
 void xor_arm64_neon_2(unsigned long bytes, unsigned long *p1,
 	unsigned long *p2)
